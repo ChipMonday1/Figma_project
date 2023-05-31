@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+:focus,
+:active {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+
+.header {
+    width: 1440px;
+    height: 765px;
+    background-image: url(/image/fon.png);
+}
+
+
+
+.container__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    background: #F2785CB2;
+}
+
+.logo__vector {
+    margin-left: 120px;
+    margin-right: 6px;
+    width: 30px;
+    height: 30px;
+}
+
+.title {
+    font-family: 'Magra';
+    font-weight: 600;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu__list {
+    display: flex;
+    gap: 42px;
+    list-style-type: none;
+    margin-right: 80px;
+    height: 21px;
+}
+
+.menu__link {
+    font-family: 'Red Hat Text';
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 103px;
+    height: 41px;
+    margin-right: 120px;
+    background: #0D606F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+}
+
+.txt__login {
+    font-family: 'Red Hat Text';
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.offer {
+    width: 892px;
+    margin-left: 120px;
+    color: #FFFFFF;
+    margin-top: 32px;
+}
+
+.explore-txt {
+    font-family: 'Aleo';
+    font-size: 80px;
+    line-height: 96px;
+}
+
+.receive-txt {
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 46px;
+}
+
+.form-offer {
+    display: flex;
+    width: 892px;
+    height: 95px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+}
+
+
+
+.input-search {
+    display: flex;
+    align-items: center;
+    width: 560px;
+    height: 22px;
+    margin-left: 41px;
+    margin-top: 32px;
+    font-size: 24px;
+    line-height: 29px;
+    font-style: italic;
+    background: none;
+}
+
+::placeholder {
+    color: #f2785c;
+}
+
+
+.btn-start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 228px;
+    height: 59px;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    margin-left: 45px;
+    margin-top: 18px;
+}
+
+.txt-button {
+    color: #FFFFFF;
+}

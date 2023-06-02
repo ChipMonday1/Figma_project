@@ -16,7 +16,6 @@
     box-sizing: border-box;
 }
 
-
 :focus,
 :active {
     outline: none;
@@ -30,14 +29,11 @@ button {
     cursor: pointer;
 }
 
-
 .header {
     width: 1440px;
     height: 765px;
     background-image: url(/image/background.png);
 }
-
-
 
 .container__menu {
     display: flex;
@@ -129,8 +125,6 @@ button {
     border-radius: 16px;
 }
 
-
-
 .input-search {
     display: flex;
     align-items: center;
@@ -148,7 +142,6 @@ button {
     color: #f2785c;
 }
 
-
 .btn-start {
     display: flex;
     justify-content: center;
@@ -165,7 +158,6 @@ button {
 .txt-button {
     color: #FFFFFF;
 }
-
 
 .main {
     width: 1440px;
@@ -221,4 +213,51 @@ button {
     font-size: 20px;
     line-height: 24px;
     color: #0D606F;
+}
+
+.heading__destinations {
+    font-family: 'Red Hat Text';
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    margin-top: 97px;
+    text-align: center;
+    color: #f2785c;
+}
+
+.img__destinations {
+    display: flex;
+    justify-content: center;
+    margin-top: 46px;
+}
+
+.position {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.img__japan {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.txt__japan {
+    position: absolute;
+    font-family: 'red hat text';
+    font-size: 32px;
+    font-weight: 500;
+    margin-left: 75px;
+    margin-top: 718px;
+    color: #FFFFFF;
+}
+
+.txt__usa {
+    position: absolute;
+    font-family: 'Red Hat Text';
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 718px;
+    margin-left: 15px;
+    color: #FFFFFF;
 }

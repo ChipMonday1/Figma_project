@@ -161,6 +161,7 @@ button {
 
 .main {
     width: 1440px;
+    overflow: hidden;
 }
 
 .heading__steps {
@@ -291,7 +292,7 @@ button {
     background: rgba(242, 120, 92, 0.5);
 }
 
-.btn__findMore {
+.btn__common {
     display: flex;
     justify-content: center;
     margin-top: 40px;
@@ -308,11 +309,90 @@ button {
     border-radius: 10px;
 }
 
-.txt-findMore {
+.txt-btn {
     font-family: 'Red Hat Text';
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
     margin-left: 12.5px;
     color: #FFFFFF;
+}
+
+.stories {
+    height: 1332px;
+}
+
+.bcStories {
+    width: 1445px;
+    height: 1331px;
+    background: url(/image/bgStories.png);
+}
+
+.bcStoriesVisibility {
+    height: 1270px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.heading__stories {
+    display: flex;
+    justify-content: center;
+    font-family: 'Red Hat Text';
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    color: #f2785c;
+}
+
+.story {
+    display: flex;
+    margin-left: 120px;
+}
+
+.img__story {
+    filter: drop-shadow(0px 4px 4px #0D606F);
+    border-radius: 16px;
+}
+
+.txt-story {
+    width: 760px;
+    margin-left: 40px;
+}
+
+.heading__story {
+    font-family: 'Aleo';
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    margin-bottom: 24px;
+    color: #0D606F;
+}
+
+.paragraph__story {
+    font-family: 'Aleo';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D606F;
+}
+
+.position__story1 {
+    padding-top: 40px;
+}
+
+.position__story2 {
+    margin-top: 30px;
+}
+
+.position__story3 {
+    margin-top: 30px;
+}
+
+.position__story4 {
+    margin-top: 30px;
+}
+
+.btn-seeMore {
+    padding-bottom: 41px;
 }

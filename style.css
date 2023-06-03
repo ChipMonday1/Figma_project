@@ -32,7 +32,7 @@ button {
 .header {
     width: 1440px;
     height: 765px;
-    background-image: url(../image/background.png);
+    background-image: url('../image/background.png');
 }
 
 .container__menu {
@@ -335,7 +335,7 @@ button {
 .bcStories {
     width: 1445px;
     height: 1331px;
-    background: url(../image/bgStories.png);
+    background: url('../image/bgStories.png');
 }
 
 .bcStoriesVisibility {

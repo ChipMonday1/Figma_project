@@ -30,7 +30,7 @@ button {
 }
 
 .header {
-    width: 1440px;
+    min-width: 1440px;
     height: 765px;
     background-image: url(image/background.png);
 }

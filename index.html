@@ -10,8 +10,8 @@
 
 </head>
 
-<body class="body">
-    <header class="header">
+<body>
+    <header class="container__header">
         <div class="container__menu">
             <div class="container__title">
                 <a href="">
@@ -35,14 +35,14 @@
             <h1 class="explore-txt">Explore the beauty of the World</h1>
             <p class="receive-txt">Receive personalized recommendations for countries, hotels, activities and more</p>
             <form class="form-offer">
-                <input class="input-search" type="text" placeholder="What would you like to do?" />
+                <input class="input-search" type="text" placeholder="What would you like to do?">
                 <button class="btn-start">
                     <span class="txt-button">Start Planning</span>
                 </button>
             </form>
         </div>
     </header>
-    <main class="main">
+    <main class="container__main">
         <h2 class="heading__steps">3 STEPS TO THE PERFECT TRIP</h2>
         <div class="steps">
             <div class="steps__common">
@@ -68,24 +68,24 @@
             <h2 class="heading__destinations">POPULAR DESTINATIONS</h2>
 
             <div class="img__destinations">
-                <div class="position">
-                    <img class="img__spain" src="./image/spain.png" alt="#">
+                <div class="position__destinations">
+                    <img class="img__common" src="./image/spain.png" alt="#">
                     <!-- Добавить по нужде-->
                     <!-- <p class="txt__spain">SPAIN</p> -->
                 </div>
-                <div class="position">
-                    <img class="img__japan" src="./image/japan.png" alt="#">
+                <div class="position__destinations">
+                    <img class="img__japan img__common" src="./image/japan.png" alt="#">
                     <p class="txt__japan">JAPAN</p>
                 </div>
-                <div class="position">
-                    <img class="img__usa" src="./image/usa.png" alt="">
+                <div class="position__destinations">
+                    <img class="img__usa img__common" src="./image/usa.png" alt="">
                     <p class="txt__usa">USA</p>
                 </div>
             </div>
-            <div class="ellipse">
-                <div class="ellipse1"></div>
-                <div class="ellipse2"></div>
-                <div class="ellipse3"></div>
+            <div class="carouselPaginator">
+                <div class="carouselPaginator__common"></div>
+                <div class="carouselPaginator__active carouselPaginator__common"></div>
+                <div class="carouselPaginator__common"></div>
             </div>
             <div class="btn__common">
                 <button class="btn-img">
@@ -94,11 +94,11 @@
                 </button>
             </div>
         </div>
-        <div class="stories">
+        <div class="travel__stories">
             <h1 class="heading__stories">TRAVEL STORIES</h1>
             <div class="bcStories">
                 <div class="bcStoriesVisibility">
-                    <div class="story position__story1">
+                    <div class="firstStory">
                         <img class="img__story" src="./image/story1.jpg" alt="#">
                         <div class="txt-story">
                             <h3 class="heading__story">10 Photos of Attractive Thailand</h3>
@@ -123,7 +123,7 @@
                             <a class="link__more">Read More</a>
                         </div>
                     </div>
-                    <div class="story position__story2">
+                    <div class="story">
                         <img class="img__story" src="./image/story2.jpg" alt="#">
                         <div class="txt-story">
                             <h3 class="heading__story">Canyonlands National Park, Utah</h3>
@@ -148,7 +148,7 @@
                             <a class="link__more">Read More</a>
                         </div>
                     </div>
-                    <div class="story position__story3">
+                    <div class="story">
                         <img class="img__story" src="./image/story3.jpg" alt="#">
                         <div class="txt-story">
                             <h3 class="heading__story">I left my heart in the Mountains!</h3>
@@ -173,7 +173,7 @@
                             <a class="link__more">Read More</a>
                         </div>
                     </div>
-                    <div class="story position__story4">
+                    <div class="story">
                         <img class="img__story" src="./image/story4.jpg" alt="#">
                         <div class="txt-story">
                             <h3 class="heading__story">The Longest journey in my life!</h3>
@@ -207,12 +207,13 @@
                 </div>
             </div>
         </div>
-        <footer class="footer">
+        <footer class="container__footer">
+            <div class="help__footer"></div>
             <span class="txt-footer">All Rights Reserved © Travel Portal</span>
-            <div class="icons__footer">
-                <img class="icon__instagram" src="./image/instagram.svg" alt="#">
-                <img class="icon__youtube" src="./image/youtube.svg" alt="#">
-                <img class="icon__twitter" src="./image/twitter.svg" alt="#">
+            <div class="container__icons">
+                <img class="icon__footer" src="./image/instagram.svg" alt="#">
+                <img class="icon__footer" src="./image/youtube.svg" alt="#">
+                <img class="last__icon icon__footer" src="./image/twitter.svg" alt="#">
             </div>
         </footer>
     </main>

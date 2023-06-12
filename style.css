@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Aleo:300,300italic,regular,italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Magra:regular,600);
 @import url(https://fonts.googleapis.com/css?family=Red+Hat+Text:300,regular,500,600,700,300italic,italic,500italic,600italic,700italic);
+/* шрифты нужно скачивать на комп в свою папку */
 
 * {
     padding: 0;
@@ -29,15 +30,13 @@ button {
     cursor: pointer;
 }
 
-
-.header {
+.container__header {
     min-width: 1440px;
     height: 765px;
     background-image: url(image/background.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-
 }
 
 .container__menu {
@@ -50,10 +49,7 @@ button {
 }
 
 .logo__vector {
-    margin-left: 120px;
-    margin-right: 6px;
-    width: 30px;
-    height: 30px;
+    padding-left: 120px;
 }
 
 .title {
@@ -61,15 +57,14 @@ button {
     font-weight: 600;
     font-size: 32px;
     line-height: 39px;
+    margin-left: 6px;
     color: #FFFFFF;
 }
 
 .menu__list {
     display: flex;
-    margin-right: 30px;
     gap: 42px;
     list-style-type: none;
-    height: 21px;
 }
 
 .menu__link {
@@ -80,9 +75,6 @@ button {
 }
 
 .login {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 103px;
     height: 41px;
     margin-right: 120px;
@@ -118,32 +110,28 @@ button {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    margin-bottom: 46px;
     margin-top: 30px;
 }
 
 .form-offer {
     display: flex;
-    width: 892px;
+    width: 100%;
     height: 95px;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 16px;
+    margin-top: 46px;
 }
 
 .input-search {
-    display: flex;
-    align-items: center;
-    width: 560px;
-    height: 22px;
+    flex: 1;
     margin-left: 41px;
-    margin-top: 32px;
     font-size: 24px;
     line-height: 29px;
-    font-style: italic;
     background: none;
 }
 
 ::placeholder {
+    /* ggwp НЕ ИСПРАВИЛ !!!*/
     font-family: 'Aleo';
     font-style: italic;
     font-weight: 400;
@@ -152,28 +140,32 @@ button {
     color: #f2785c;
 }
 
-.btn-start {
+.btn__common {
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 40px;
+}
+
+.btn-start {
     width: 228px;
     height: 59px;
     background: #0D606F;
     box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
     border-radius: 10px;
-    margin-left: 45px;
     margin-top: 18px;
+    margin-right: 18px;
 }
 
 .txt-button {
     font-family: 'Red Hat Text';
+    font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
     color: #FFFFFF;
 }
 
-.main {
+.container__main {
     min-width: 1440px;
     overflow: hidden;
 }
@@ -236,22 +228,15 @@ button {
     margin-top: 46px;
 }
 
-.position {
+.position__destinations {
     display: flex;
-
 }
 
 .img__japan {
-    border-radius: 16px;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin: 0 60px;
 }
 
-.img__usa {
-    border-radius: 16px;
-}
-
-.img__spain {
+.img__common {
     border-radius: 16px;
 }
 
@@ -275,45 +260,26 @@ button {
     color: #FFFFFF;
 }
 
-.ellipse {
+.carouselPaginator {
     display: flex;
     justify-content: center;
     margin-top: 24px;
 }
 
-.ellipse1 {
+.carouselPaginator__common {
     height: 20px;
     width: 20px;
     border-radius: 50%;
     background: rgba(242, 120, 92, 0.5);
+    margin: 0 5px;
+    /* схлоп margin */
 }
 
-.ellipse2 {
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
+.carouselPaginator__active {
     background: #f2785c;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.ellipse3 {
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background: rgba(242, 120, 92, 0.5);
-}
-
-.btn__common {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
 }
 
 .btn-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 228px;
     height: 59px;
     background: #0D606F;
@@ -330,7 +296,7 @@ button {
     color: #FFFFFF;
 }
 
-.stories {
+.travel__stories {
     height: 1332px;
 }
 
@@ -339,7 +305,6 @@ button {
     height: 1331px;
     background: url(image/bgStories.png) no-repeat;
     background-size: 100%;
-
 }
 
 .bcStoriesVisibility {
@@ -359,9 +324,16 @@ button {
     color: #f2785c;
 }
 
+.firstStory {
+    display: flex;
+    padding-left: 120px;
+    padding-top: 40px;
+}
+
 .story {
     display: flex;
-    margin-left: 120px;
+    padding-left: 120px;
+    padding-top: 30px;
 }
 
 .img__story {
@@ -401,42 +373,39 @@ button {
     color: #0D606F;
 }
 
-.position__story1 {
-    padding-top: 40px;
-}
-
-.position__story2 {
-    margin-top: 30px;
-}
-
-.position__story3 {
-    margin-top: 30px;
-}
-
-.position__story4 {
-    margin-top: 30px;
-}
-
-.footer {
+.container__footer {
     display: flex;
-    justify-content: flex-end;
+    margin-top: 54px;
+}
+
+.help__footer {
+    flex: 1;
+    /* можно 50% */
 }
 
 .txt-footer {
+    white-space: nowrap;
     font-family: 'Red Hat Text';
     font-weight: 500;
     font-size: 16px;
     line-height: 21px;
-    margin-right: 327px;
-    margin-top: 50px;
     color: #FFFFFF;
 }
 
-.icons__footer {
+.container__icons {
     display: flex;
-    justify-content: space-between;
-    width: 141px;
+    justify-content: flex-end;
+    flex: 1;
+    /* можно 50% */
+}
+
+.icon__footer {
+    position: relative;
+    bottom: 9px;
+    margin-right: 20px;
+    /* margin 0 10px */
+}
+
+.last__icon {
     margin-right: 123px;
-    margin-top: 45px;
-    margin-bottom: 19px;
 }
